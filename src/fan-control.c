@@ -44,7 +44,12 @@ int pwm_period = 10000;
 #define DEFAULT_PID_PATH "/run/fan-control.pid"
 #define DEFAULT_CONF_PATH "/etc/fan-control.json"
 
-#define FAN_PWM_PATH "/sys/devices/platform/fd8b0010.pwm/pwm"
+#ifdef __riscv
+#   define FAN_PWM_PATH "/sys/class/pwm"
+#else
+#   define FAN_PWM_PATH "/sys/devices/platform/fd8b0010.pwm/pwm"
+#endif
+
 #define TEMP_PATH "/sys/class/thermal/thermal_zone0/temp"
 
 struct temp_map_struct

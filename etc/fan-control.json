@@ -9,6 +9,11 @@
             "duration": 20
         },
         {
+            "temp": 42,
+            "duty": 40,
+            "duration": 20
+        },
+        {
             "temp": 44,
             "duty": 55,
             "duration": 25

@@ -28,7 +28,7 @@ SYSCONFDIR := /etc
 RUNSTATEDIR := /var/run
 SYSTEMDSYSTEMUNITDIR := $(shell ${PKG_CONFIG} --variable=systemdsystemunitdir systemd)
 FAN_CONTROL_SYSTEMD = systemd/fan-control.service
-VER := "1.0.0"
+VER := "1.0.1"
 
 .PHONY: all clean install FAN_CONTROL_BIN package
 all: package 

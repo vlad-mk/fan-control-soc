@@ -58,8 +58,8 @@ build()
 	chmod +x $ROOT/usr/sbin/fan-control
     chmod +x $ROOT/etc/init.d/fan-control
 
-	dpkg -b $ROOT $OUTPUTDIR/fan-control-rock5b.$VER.$FILEARCH.deb
-
+	##dpkg -b $ROOT $OUTPUTDIR/fan-control-soc.$VER.$FILEARCH.deb
+	dpkg-deb --root-owner-group --build $ROOT $OUTPUTDIR/fan-control-soc.$VER.$FILEARCH.deb
 	rm -fr $ROOT/
 }
 

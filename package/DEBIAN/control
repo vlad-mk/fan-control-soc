@@ -1,9 +1,9 @@
-Source: fan-control-rock5b
+Source: fan-control-soc
 Maintainer: Nick Peng <pymumu@gmail.com>
 Build-Depends: debhelper (>= 8.0.0)
 Version: 
 Section: utils
-Package: fan-control-rock5b
+Package: fan-control-soc
 Priority: extra  
 Architecture: armhf
-Description: fan control for rock 5B
+Description: fan control for rock 5B/vf2
